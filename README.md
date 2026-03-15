@@ -39,6 +39,9 @@ Efficiency = 0.86
 Power Factor = 0.82  
 Frequency = 50 Hz  
 
+![Kết quả dự án](results/result_demo.png)
+
+
 ## Author
 
 Khanh  
