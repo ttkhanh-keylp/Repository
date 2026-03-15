@@ -12,6 +12,15 @@ MATLAB application for basic three-phase induction motor calculations.
 - Power factor correction
 - Torque–Slip graph
 - Excel report export
+  ## 📊 Kết quả dự án
+
+### Giao diện ứng dụng
+Đây là giao diện điều khiển và tính toán thông số động cơ:
+![Giao diện Motor App](results/result_demo_1.png)
+
+### Bảng kết quả chi tiết
+Dữ liệu tính toán được xuất ra định dạng Excel chuyên nghiệp:
+![Bảng kết quả Excel](results/result_demo_2.png)
 
 ## Requirements
 
