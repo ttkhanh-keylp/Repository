@@ -2,6 +2,17 @@ function motor_app
 
 clc
 close all
+% 1. Lấy đường dẫn của thư mục hiện tại (đang là thư mục 'src')
+% Thay dòng currentDir = pwd; bằng dòng này:
+currentDir = fileparts(mfilename('fullpath')); 
+
+% 2. Lấy đường dẫn thư mục cha (Chính là thư mục gốc 'Motor_App')
+projectDir = fileparts(currentDir); 
+
+% 3. Tạo đường dẫn đầy đủ đến file Excel trong thư mục 'results'
+% Lệnh fullfile sẽ tự động thêm dấu '/' hoặc '\' tùy theo bạn dùng Windows hay Mac
+resultPath = fullfile(projectDir, 'results', 'motor_result.xlsx');
+
 
 %% CREATE GUI
 
@@ -205,8 +216,7 @@ Unit = data(:,3);
 
 T = table(Parameter,Value,Unit);
 
-writetable(T,'motor_result.xlsx')
-
+writetable(T, resultPath); % Chuẩn: Nó sẽ lưu thẳng vào folder results
 uialert(fig,'File motor_result.xlsx saved','Export Complete')
 
 end
