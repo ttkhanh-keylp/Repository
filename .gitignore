@@ -1,0 +1,15 @@
+# MATLAB các file tạm và tự động lưu
+*.asv
+*.slxc
+*.mex*
+*.p
+*.app
+*.exe
+
+# Các file log và rác hệ thống
+*.log
+.DS_Store
+Thumbs.db
+
+# Thư mục kết quả nội bộ (nếu bạn không muốn đẩy kết quả tạm lên)
+# results/
